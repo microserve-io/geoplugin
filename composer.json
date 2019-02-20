@@ -17,6 +17,11 @@
             "Microserve\\GeopluginApi\\": "src/"
         }
     },
+    "autoload-dev": {
+        "psr-4": {
+            "Microserve\\GeopluginApi\\Tests\\": "tests/"
+        }
+    },
     "require-dev": {
         "phpunit/phpunit": "^7.5"
     }
