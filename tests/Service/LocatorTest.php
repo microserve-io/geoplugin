@@ -11,8 +11,15 @@ use PHPUnit\Framework\TestCase;
 
 class LocatorTest extends TestCase
 {
-    /** @test */
-    public function can_retrieve_the_country_code()
+    /**
+     * @var \Microserve\GeopluginApi\Service\Locator
+     */
+    private $locator;
+
+    /**
+     * {@inheritdoc}
+     */
+    public function setUp()
     {
         $mock = new MockHandler([
             new Response(200, [], serialize([
@@ -22,11 +29,13 @@ class LocatorTest extends TestCase
         ]);
 
         $handler = HandlerStack::create($mock);
-
         $client = new Client(['handler' => $handler]);
+        $this->locator = new Locator($client);
+    }
 
-        $result = new Locator($client);
-
-        $this->assertSame('GB', $result->execute()->getCountryCode());
+    /** @test */
+    public function can_retrieve_the_country_code()
+    {
+        $this->assertSame('GB', $this->locator->execute()->getCountryCode());
     }
 }
