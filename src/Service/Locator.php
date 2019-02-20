@@ -14,8 +14,26 @@ class Locator
     /**
      * Constants for the field keys.
      */
+    const FIELD_AREA_CODE = 'geoplugin_areaCode';
+    const FIELD_CITY = 'geoplugin_city';
+    const FIELD_CONTINENT_CODE = 'geoplugin_continentCode';
+    const FIELD_CONTINENT_NAME = 'geoplugin_continentName';
     const FIELD_COUNTRY_CODE = 'geoplugin_countryCode';
     const FIELD_COUNTRY_NAME = 'geoplugin_countryName';
+    const FIELD_CURRENCY_CODE = 'geoplugin_currencyCode';
+    const FIELD_CURRENCY_CONVERTER = 'geoplugin_currencyConverter';
+    const FIELD_CURRENCY_SYMBOL = 'geoplugin_currencySymbol';
+    const FIELD_CURRENCY_SYMBOL_UTF8 = 'geoplugin_currencySymbol_UTF8';
+    const FIELD_DMA_CODE = 'geoplugin_dmaCode';
+    const FIELD_EU_VAT_RATE = 'geoplugin_euVATrate';
+    const FIELD_IN_EU = 'geoplugin_inEU';
+    const FIELD_LATITUDE = 'geoplugin_latitude';
+    const FIELD_LOCATION_ACCURACY_RADIUS = 'geoplugin_locationAccuracyRadius';
+    const FIELD_LONGITUDE = 'geoplugin_longitude';
+    const FIELD_REGION = 'geoplugin_region';
+    const FIELD_REGION_CODE = 'geoplugin_regionCode';
+    const FIELD_REGION_NAME = 'geoplugin_regionName';
+    const FIELD_TIMEZONE = 'geoplugin_timezone';
 
     /**
      * @var \GuzzleHttp\Client
