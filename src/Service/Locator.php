@@ -50,7 +50,7 @@ class Locator
     /**
      * Set the IP address.
      *
-     * @param \Microserve\GeopluginApi\Service\string $ipAddress
+     * @param string $ipAddress
      *   The IP address to set.
      *
      * @return self
