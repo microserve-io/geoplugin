@@ -27,6 +27,7 @@ class Locator
     const FIELD_DMA_CODE = 'geoplugin_dmaCode';
     const FIELD_EU_VAT_RATE = 'geoplugin_euVATrate';
     const FIELD_IN_EU = 'geoplugin_inEU';
+    const IP_ADDRESS = 'geoplugin_request';
     const FIELD_LATITUDE = 'geoplugin_latitude';
     const FIELD_LOCATION_ACCURACY_RADIUS = 'geoplugin_locationAccuracyRadius';
     const FIELD_LONGITUDE = 'geoplugin_longitude';
