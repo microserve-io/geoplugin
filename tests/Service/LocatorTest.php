@@ -25,6 +25,7 @@ class LocatorTest extends TestCase
             new Response(200, [], serialize([
                 Locator::FIELD_COUNTRY_CODE => 'GB',
                 Locator::FIELD_COUNTRY_NAME => 'United Kingdom',
+                Locator::FIELD_IP_ADDRESS => '1.2.3.4',
             ])),
         ]);
 
@@ -37,5 +38,11 @@ class LocatorTest extends TestCase
     public function can_retrieve_the_country_code()
     {
         $this->assertSame('GB', $this->locator->execute()->getCountryCode());
+    }
+
+    /** @test */
+    public function can_retrieve_the_ip_address()
+    {
+        $this->assertSame('1.2.3.4', $this->locator->execute()->getIpAddress());
     }
 }

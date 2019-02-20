@@ -108,4 +108,14 @@ class Locator
     {
         return $this->data[self::FIELD_COUNTRY_CODE];
     }
+
+    /**
+     * Get the request's IP address.
+     *
+     * @return string
+     */
+    public function getIpAddress(): string
+    {
+        return $this->data[self::FIELD_IP_ADDRESS];
+    }
 }
