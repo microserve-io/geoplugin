@@ -12,6 +12,11 @@ class Locator
     const BASE_URL = 'http://www.geoplugin.net/php.gp';
 
     /**
+     * @var \GuzzleHttp\Client
+     */
+    private $client;
+
+    /**
      * The IP address to query.
      *
      * @var string
@@ -24,6 +29,17 @@ class Locator
      * @var array
      */
     private $data = [];
+
+    /**
+     * Locator constructor.
+     *
+     * @param \GuzzleHttp\Client|NULL $client
+     *   A Guzzle client.
+     */
+    public function __construct(Client $client = null)
+    {
+        $this->client = $client ?? new Client();
+    }
 
     /**
      * Set the IP address.
@@ -47,9 +63,7 @@ class Locator
      */
     public function execute(): self
     {
-        $client = new Client();
-
-        $response = $client->get(self::BASE_URL, [
+        $response = $this->client->get(self::BASE_URL, [
             'query' => [
                 'ip' => $this->ipAddress,
             ],
