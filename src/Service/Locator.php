@@ -17,6 +17,11 @@ class Locator
     const FIELD_COUNTRY_CODE = 'geoplugin_countryCode';
 
     /**
+     * The key for the country code.
+     */
+    const FIELD_COUNTRY_NAME = 'geoplugin_countryName';
+
+    /**
      * @var \GuzzleHttp\Client
      */
     private $client;
