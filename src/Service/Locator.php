@@ -12,6 +12,11 @@ class Locator
     const BASE_URL = 'http://www.geoplugin.net/php.gp';
 
     /**
+     * The key for the country code.
+     */
+    const FIELD_COUNTRY_CODE = 'geoplugin_countryCode';
+
+    /**
      * @var \GuzzleHttp\Client
      */
     private $client;
@@ -81,6 +86,6 @@ class Locator
      */
     public function getCountryCode(): string
     {
-        return $this->data['geoplugin_countryCode'];
+        return $this->data[self::FIELD_COUNTRY_CODE];
     }
 }

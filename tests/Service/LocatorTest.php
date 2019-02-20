@@ -23,7 +23,7 @@ class LocatorTest extends TestCase
     {
         $mock = new MockHandler([
             new Response(200, [], serialize([
-                'geoplugin_countryCode' => 'GB',
+                Locator::FIELD_COUNTRY_CODE => 'GB',
                 'geoplugin_countryName' => 'United Kingdom',
             ])),
         ]);
