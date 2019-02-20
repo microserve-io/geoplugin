@@ -40,11 +40,11 @@ class Locator
         return $this;
     }
 
-  /**
-   * Execute the query.
-   *
-   * @return self
-   */
+    /**
+     * Execute the query.
+     *
+     * @return self
+     */
     public function execute(): self
     {
         $client = new Client();
