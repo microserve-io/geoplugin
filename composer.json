@@ -1,6 +1,6 @@
 {
-    "name": "microserve/geoplugin-api",
-    "description": "An API for interacting with the Geoplugin API.",
+    "name": "microserve/geoplugin",
+    "description": "A library for interacting with the Geoplugin API.",
     "type": "library",
     "license": "MIT",
     "authors": [
