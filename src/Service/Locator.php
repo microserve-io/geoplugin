@@ -12,13 +12,9 @@ class Locator
     const BASE_URL = 'http://www.geoplugin.net/php.gp';
 
     /**
-     * The key for the country code.
+     * Constants for the field keys.
      */
     const FIELD_COUNTRY_CODE = 'geoplugin_countryCode';
-
-    /**
-     * The key for the country code.
-     */
     const FIELD_COUNTRY_NAME = 'geoplugin_countryName';
 
     /**
