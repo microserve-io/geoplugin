@@ -1,6 +1,6 @@
 <?php
 
-namespace Microserve\GeopluginApi\Service;
+namespace Microserve\Geoplugin\Service;
 
 use GuzzleHttp\Client;
 

@@ -15,12 +15,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Microserve\\GeopluginApi\\": "src/"
+            "Microserve\\Geoplugin\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Microserve\\GeopluginApi\\Tests\\": "tests/"
+            "Microserve\\Geoplugin\\Tests\\": "tests/"
         }
     },
     "require-dev": {

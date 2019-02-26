@@ -1,6 +1,6 @@
 <?php
 
-namespace Microserve\GeopluginApi\Tests;
+namespace Microserve\Geoplugin\Tests;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\Handler\MockHandler;
