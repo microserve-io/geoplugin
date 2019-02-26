@@ -6,7 +6,7 @@ use GuzzleHttp\Client;
 use GuzzleHttp\Handler\MockHandler;
 use GuzzleHttp\HandlerStack;
 use GuzzleHttp\Psr7\Response;
-use Microserve\GeopluginApi\Service\Locator;
+use Microserve\Geoplugin\Service\Locator;
 use PHPUnit\Framework\TestCase;
 
 class LocatorTest extends TestCase
