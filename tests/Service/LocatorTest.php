@@ -12,7 +12,7 @@ use PHPUnit\Framework\TestCase;
 class LocatorTest extends TestCase
 {
     /**
-     * @var \Microserve\GeopluginApi\Service\Locator
+     * @var \Microserve\Geoplugin\Service\Locator
      */
     private $locator;
 
