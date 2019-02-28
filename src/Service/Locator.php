@@ -118,4 +118,15 @@ class Locator
     {
         return $this->data[self::FIELD_IP_ADDRESS];
     }
+
+    /**
+     * Return the data as an array.
+     */
+    public function toArray(): array
+    {
+        unset($this->data['geoplugin_delay']);
+        unset($this->data['geoplugin_credit']);
+
+        return $this->data;
+    }
 }
