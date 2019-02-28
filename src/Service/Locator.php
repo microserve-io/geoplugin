@@ -77,6 +77,7 @@ class Locator
     public function setIpAddress(string $ipAddress): self
     {
         $this->ipAddress = $ipAddress;
+        $this->data[self::FIELD_IP_ADDRESS] = $ipAddress;
 
         return $this;
     }
